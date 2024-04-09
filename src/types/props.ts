@@ -1,17 +1,14 @@
-export type SpanProps = {
-    text:string;
-    color:string;
-}
-
+export type SpanProps = {text:string; color:string;}
+export type size = {lg:string; md:string; xs:string} 
 export type BtnProps = {
     Title:string;
     px?:string;
     py?:string;
-    bgcolor?:string;
+    background?:string;
     color?:string;
     width?:string;
     height?:string;
-    fontSize?:string;
+    fontSize?:size | string;
     fontWeight?:string;
     border?:string;
     borderRadius?:string;
