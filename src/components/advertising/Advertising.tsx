@@ -7,14 +7,14 @@ import TitleAd from './components/TitleAd';
 
 export default function Advertising() {
   return (
-    <Box mx={{ xs: '1rem', md: '4rem' }} display='flex' justifyContent='space-between' alignItems='center'>
-    <Box flex='1'>
-      <EffectBack />
-      <TitleAd />
-    </Box>
-    <Box flex='1'>
-      <Carousel images={images} />
-    </Box>
+    <Box display='flex' justifyContent='space-between' alignItems='center'>
+      <Box flex='1'>
+        <EffectBack />
+        <TitleAd />
+      </Box>
+      <Box flex='1'>
+        <Carousel images={images} />
+      </Box>
   </Box>
   )
 }
