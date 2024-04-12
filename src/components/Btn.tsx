@@ -9,7 +9,7 @@ export default function Btn({Title, px, py, background, color, width, height, fo
         sx={{
           cursor:'pointer', 
           bgcolor:`#${background}` , color:{color} , fontWeight:{fontWeight}
-        , border:'none' ,  py:`${py}` , px:`${px}` , borderRadius:{borderRadius}}}
+         , py:`${py}` , px:`${px}` , borderRadius:{borderRadius}}}
         width={width} height={height} fontSize={fontSize} border={border} mb={mb}>
         {Title}
     </Box>
