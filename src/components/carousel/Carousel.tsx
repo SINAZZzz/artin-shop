@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, CircularProgress } from '@mui/material';
 
 interface CarouselProps {
   images: string[];
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
+  const [loading, setLoading] = useState(true);
   const [index, setIndex] = useState(0);
 
   const handleDotClick = (dotIndex: number) => {
@@ -29,7 +30,11 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         justifyContent='center'
         alignItems='center'
       >
-        <Box component='img' src={images[index]} style={{ maxWidth: '100%' }} /> 
+        {loading && <CircularProgress />} 
+        <Box component='img' src={images[index]}
+        onLoad={() => setLoading(false)}
+        onError={() => setLoading(false)}
+        style={{ display: loading ? 'none' : 'block' ,  maxWidth: '100%' }} /> 
       </Box>
       <Box display='flex'>
         {images.map((_, i) => (

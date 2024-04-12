@@ -1,8 +1,11 @@
-import { Box, Typography } from '@mui/material'
+import { Box, CircularProgress, Typography } from '@mui/material'
 import Title from '../Title'
 import Btn from '../Btn'
+import { useState } from 'react';
 
 export default function Discount() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <Box display='flex' alignItems='end' borderRadius='10px' width='100%' my='4rem' height='20rem' style={{background: 'linear-gradient(to top, rgba(185,34,65,100%),rgba(243,57,90,100%))'}}>
         <Box display='flex' alignItems='end' zIndex={0} position='absolute' height='43%' right='0'>
@@ -19,7 +22,11 @@ export default function Discount() {
                 background='ffffff40' borderRadius='10px' px='20px' py='10px' color='white' fontWeight={'bold'} />
             </Box>
             <Box display='flex' flexDirection='column' justifyContent='center' alignItems='center' height='100%' ml='2rem' pr='2rem'>
-                <Box component='img' src='https://s8.uupload.ir/files/untitled-4_0lco.png' />
+                {loading && <CircularProgress />} 
+                <Box component='img' src='https://s8.uupload.ir/files/untitled-4_0lco.png'
+                 onLoad={() => setLoading(false)} 
+                 onError={() => setLoading(false)} 
+                 style={{ display: loading ? 'none' : 'block' }} />
             </Box>
         </Box>
     </Box>
