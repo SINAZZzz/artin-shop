@@ -8,7 +8,7 @@ export default function Products() {
         <Box>
             <Title title='محصولات' fontSize='1.2rem' textAlign='center' mt='2rem' color='#4A4A4A' />
                 <Hr my='1rem' border='1px #B6B6B6 solid' />
-                <Grid container spacing={6} justifyContent="center">
+                <Grid container spacing={8} justifyContent="center">
                 {ProductsData.products.map(product => (
                     <Grid item key={product.id} xs={12} sm={6} md={4} lg={3} container justifyContent="center">
                     <Box border='1px solid #B6B6B6' borderRadius='10px' width='fit-content' display="flex" flexDirection="column">
