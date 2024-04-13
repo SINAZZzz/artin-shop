@@ -4,6 +4,8 @@ import Categories from './components/categories/Categories';
 import Advertising from './components/advertising/Advertising';
 import Products from './components/products/Products';
 import Discount from './components/discount/Discount';
+import CardProduct from './components/CardProduct';
+import { ProductsDataTwo } from './data/Products.data.two';
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
         <Advertising />
         <Products />
         <Discount />
+        <CardProduct productsData={ProductsDataTwo} />
       </Box>
     </Box>
   )

@@ -11,7 +11,7 @@ export const ProductsData = {
         "title": "کفش پیاده روی  مدل NOV-BK",
         "description": "360,000 تومان",
         "imageUrl" : "https://s8.uupload.ir/files/group_1261153104_9c2c.png"
-      },
+      }, 
       {
         "id": "2",
         "title": "کفش راحتی کد 210",
