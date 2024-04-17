@@ -62,11 +62,12 @@ export type BackEfProps ={
     left?:number;
     children: ReactNode;
 }
-export type ShadowBoxProps = {
-    width: string;
-    height: string;
+export type ShadowBoxProps = { 
+    width?: Size | string;
+    height?: Size | string;
     mr?: Size | string;
     ml?: Size | string;
+    mt?: Size | string;
     borderRadius: string;
     style:{background:string};
 }

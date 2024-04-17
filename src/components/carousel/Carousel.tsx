@@ -30,7 +30,10 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         justifyContent='center'
         alignItems='center'
       >
-        {loading && <CircularProgress />} 
+        {loading && 
+        <Box p='13rem'>
+          <CircularProgress />
+        </Box>} 
         <Box component='img' src={images[index]}
         onLoad={() => setLoading(false)}
         onError={() => setLoading(false)}
