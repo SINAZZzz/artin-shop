@@ -1,8 +1,11 @@
-import { Box, Typography } from '@mui/material'
+import { Box, CircularProgress, Typography } from '@mui/material'
 import Title from '../../../Title'
 import Btn from '../../../Btn'
+import { useState } from 'react';
 
 export default function ContentL() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <Box display='flex' width='100%' height='100%' justifyContent='space-between' >
         <Box zIndex={1} display='flex' flexDirection='column' justifyContent='center' alignItems='start' height='100%' mr='2rem'>
@@ -13,7 +16,11 @@ export default function ContentL() {
             py='10px' color='white' fontWeight={'bold'} />
         </Box>
         <Box zIndex={1} display='flex' flexDirection='column' justifyContent='center' alignItems='center' height='100%'>
-            <Box component='img' src='https://s8.uupload.ir/files/air-max-270-react-se_c1y4.png' width='100%' ml={{lg:'-4rem' , md:'-1rem'}}  />
+        {loading && 
+        <Box display='flex' justifyContent='center' p='5rem'>
+          <CircularProgress color='error' />
+        </Box> }
+            <Box component='img' src='https://s8.uupload.ir/files/air-max-270-react-se_c1y4.png' width='100%' ml={{lg:'-4rem' , md:'-1rem'}} onLoad={() => setLoading(false)} onError={() => setLoading(false)} style={{ display: loading ? 'none' : 'block' }}  />
         </Box>
     </Box>
   )

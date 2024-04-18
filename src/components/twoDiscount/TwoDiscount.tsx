@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import DiscountBox from "../DiscountBox";
 import BackEffectBoxR from "./components/back/BackEffectBoxR";
 import BackEffectBoxL from "./components/back/BackEffectBoxL";
-import ContentR from "./components/content/contentR";
+import ContentR from "./components/content/ContentR";
 import ContentL from "./components/content/ContentL";
 
 export default function TwoDiscount() {
