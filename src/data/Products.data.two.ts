@@ -6,7 +6,7 @@ export const ProductsDataTwo = {
         "description": "380,000 تومان",
         "imageUrl": "https://s8.uupload.ir/files/group_1261153106_(2)_ekey.png"
       }, 
-      {
+      { 
         "id": "1",
         "title": "کفش پیاده روی  مدل NOV-BK",
         "description": "360,000 تومان",
