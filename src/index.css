@@ -12,6 +12,8 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,8 +27,8 @@
 }
 
 .swiper-pagination-bullet-active {
-     background-color: #CEC0FF !important;
+  background-color: #cec0ff !important;
 }
-.swiper-pagination-bullet{
-  background-color: #7854F7 !important;
+.swiper-pagination-bullet {
+  background-color: #7854f7 !important;
 }
