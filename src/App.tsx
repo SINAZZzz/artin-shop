@@ -1,7 +1,5 @@
 import {
   Box,
-  IconButton,
-  InputAdornment,
   TextField,
   Typography,
 } from "@mui/material";
@@ -15,8 +13,8 @@ import CardProduct from "./components/CardProduct";
 import { ProductsDataTwo } from "./data/Products.data.two";
 import TwoDiscount from "./components/twoDiscount/TwoDiscount";
 import CarouselProducts from "./components/carouselProducts/CarouselProducts";
-import SearchIcon from "@mui/icons-material/Search";
 import Btn from "./components/Btn";
+import Newsletters from "./components/newsletters/Newsletters";
 
 export default function App() {
   return (
@@ -46,63 +44,20 @@ export default function App() {
         </Box>
       </Box>
       <Box mx={{ xs: "1rem", md: "4rem" }}>
-        {/* Newsletters */}
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          height="10rem"
-          width="100%"
-        >
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            alignItems="center"
-            flexDirection="row"
-            width="100%"
-          >
-            <Box>
-              <Typography fontWeight="bold" mb="0.5rem">
-                ثبت نام در خبرنامه
-              </Typography>
-              <Typography color="#4A4A4A">
-                اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های
-                ویژه ما مطلع می شوید.
-              </Typography>
-            </Box>
-            <Box>
-              <TextField
-                placeholder="شماره موبایل"
-                variant="outlined"
-                dir="rtl"
-                InputProps={{
-                  style: {
-                    fontSize: "1.2rem",
-                    maxWidth: "100%",
-                    borderRadius: "10px",
-                    height: "3rem",
-                    marginLeft: "2rem",
-                  },
-                }}
-                sx={{
-                  width: { xs: "15rem", md: "25rem" },
-                }}
-              />
-              <Btn
-                Title="ارسال"
-                borderRadius="10px"
-                px="2.5rem"
-                border="none"
-                color="white"
-                background="7854F7"
-                py="1rem"
-                fontSize="1rem"
-              />
-            </Box>
+        <Newsletters />
+      </Box>
+      {/* Footer */}
+      <Box>
+        <Box display='flex' justifyContent='space-between' alignItems='center' width='100%' height='5rem' border='1px solid' borderRight='none' borderLeft='none' bgcolor='#EBE6FE' >
+          <Typography mr={{ xs: "1rem", md: "4rem" }}>پشتیبانی 24 ساعته در هر روز هفته</Typography>
+          <Typography>تلفن پشتیبانی کالا: 5293792-021</Typography>
+          <Box display='flex' justifyContent='space-between' width='20%' ml={{ xs: "1rem", md: "4rem" }}>
+            <Typography>راهنما</Typography>
+            <Typography>فروشگاه</Typography>
+            <Typography>سبد خرید</Typography>
+            <Typography>پرسش های متداول</Typography>
           </Box>
         </Box>
-        {/* Footer */}
-        <Box>Footer</Box>
       </Box>
     </Box>
   );
