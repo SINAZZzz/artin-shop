@@ -1,5 +1,5 @@
-import { IconButton, InputAdornment, TextField } from '@mui/material'
-import SearchIcon from '@mui/icons-material/Search';
+import { IconButton, InputAdornment, TextField } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function Search() {
   return (
@@ -9,10 +9,10 @@ export default function Search() {
       dir="rtl"
       InputProps={{
         style: {
-          fontSize: '1.2rem',
-          maxWidth: '100%',
-          borderRadius: '10px',
-          height: '3rem',
+          fontSize: "1.2rem",
+          maxWidth: "100%",
+          borderRadius: "10px",
+          height: "3rem",
         },
         endAdornment: (
           <InputAdornment position="start">
@@ -20,11 +20,11 @@ export default function Search() {
               <SearchIcon />
             </IconButton>
           </InputAdornment>
-        )
+        ),
       }}
       sx={{
-        width: { xs: '15rem', md: '25rem' }
+        width: { xs: "15rem", md: "25rem" },
       }}
     />
-  )
+  );
 }

@@ -1,4 +1,8 @@
-import { Box } from "@mui/material";
+import {
+  Box,
+  TextField,
+  Typography,
+} from "@mui/material";
 import "./index.css";
 import Head from "./components/head/Head";
 import Categories from "./components/categories/Categories";
@@ -9,6 +13,8 @@ import CardProduct from "./components/CardProduct";
 import { ProductsDataTwo } from "./data/Products.data.two";
 import TwoDiscount from "./components/twoDiscount/TwoDiscount";
 import CarouselProducts from "./components/carouselProducts/CarouselProducts";
+import Btn from "./components/Btn";
+import Newsletters from "./components/newsletters/Newsletters";
 
 export default function App() {
   return (
@@ -37,8 +43,22 @@ export default function App() {
           ></Box>
         </Box>
       </Box>
-      <Box>Newsletters</Box>
-      <Box>Footer</Box>
+      <Box mx={{ xs: "1rem", md: "4rem" }}>
+        <Newsletters />
+      </Box>
+      {/* Footer */}
+      <Box>
+        <Box display='flex' justifyContent='space-between' alignItems='center' width='100%' height='5rem' border='1px solid' borderRight='none' borderLeft='none' bgcolor='#EBE6FE' >
+          <Typography mr={{ xs: "1rem", md: "4rem" }}>پشتیبانی 24 ساعته در هر روز هفته</Typography>
+          <Typography>تلفن پشتیبانی کالا: 5293792-021</Typography>
+          <Box display='flex' justifyContent='space-between' width='20%' ml={{ xs: "1rem", md: "4rem" }}>
+            <Typography>راهنما</Typography>
+            <Typography>فروشگاه</Typography>
+            <Typography>سبد خرید</Typography>
+            <Typography>پرسش های متداول</Typography>
+          </Box>
+        </Box>
+      </Box>
     </Box>
   );
 }
