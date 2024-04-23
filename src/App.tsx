@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, List, ListItem, Typography } from "@mui/material";
 import "./index.css";
 import Head from "./components/head/Head";
 import Categories from "./components/categories/Categories";
@@ -76,9 +76,10 @@ export default function App() {
           display="flex"
           flexDirection="column"
           alignItems="center"
-          height="10rem"
+          height="fit-content"
           width="100%"
           bgcolor="#EBE6FE"
+          px={{ xs: "1rem", md: "4rem" }}
         >
           <Box
             display="flex"
@@ -87,7 +88,53 @@ export default function App() {
             width="100%"
           >
             {/* list */}
-            <Box>list</Box>
+            <Box display="flex" justifyContent="space-between" width="30%">
+              <List>
+                <ListItem
+                  sx={{
+                    fontWeight: "bold",
+                    color: "#003F62",
+                    fontSize: "1.1rem",
+                  }}
+                >
+                  دسته بندی‌ها
+                </ListItem>
+                <ListItem>زنانه</ListItem>
+                <ListItem>مردانه</ListItem>
+                <ListItem>بچگانه</ListItem>
+                <ListItem>زیبایی و سلامت</ListItem>
+              </List>
+              <List>
+                <ListItem
+                  sx={{
+                    fontWeight: "bold",
+                    color: "#003F62",
+                    fontSize: "1.1rem",
+                  }}
+                >
+                  برندهای مهم
+                </ListItem>
+                <ListItem>کفش نایک</ListItem>
+                <ListItem>کفش آدیداس</ListItem>
+                <ListItem>کفش سالومون</ListItem>
+                <ListItem>کفش نیوبالانس</ListItem>
+              </List>
+              <List>
+                <ListItem
+                  sx={{
+                    fontWeight: "bold",
+                    color: "#003F62",
+                    fontSize: "1.1rem",
+                  }}
+                >
+                  خدمات ما
+                </ListItem>
+                <ListItem>درباره ما</ListItem>
+                <ListItem>تماس با ما</ListItem>
+                <ListItem>همکاری تجاری</ListItem>
+                <ListItem>قوانین و مقررات</ListItem>
+              </List>
+            </Box>
             <Box display="flex" flexDirection="column">
               {/* social media */}
               <Box
