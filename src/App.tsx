@@ -88,19 +88,17 @@ export default function App() {
           >
             {/* list */}
             <Box>list</Box>
-            <Box display="flex">
+            <Box display="flex" flexDirection="column">
               {/* social media */}
               <Box
                 style={{ color: "#003F62" }}
-                width="50%"
                 display="flex"
-                justifyContent="space-between"
-                alignItems="center"
+                justifyContent="left"
               >
-                <InstagramIcon />
-                <FacebookRoundedIcon />
-                <WhatsAppIcon />
                 <TwitterIcon />
+                <FacebookRoundedIcon sx={{ mr: "1rem" }} />
+                <WhatsAppIcon sx={{ mr: "1rem" }} />
+                <InstagramIcon sx={{ mr: "1rem" }} />
               </Box>
               {/* Signs */}
               <Box display="flex">
