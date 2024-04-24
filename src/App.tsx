@@ -1,4 +1,4 @@
-import { Box, List, ListItem, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import "./index.css";
 import Head from "./components/head/Head";
 import Categories from "./components/categories/Categories";
@@ -10,10 +10,7 @@ import { ProductsDataTwo } from "./data/Products.data.two";
 import TwoDiscount from "./components/twoDiscount/TwoDiscount";
 import CarouselProducts from "./components/carouselProducts/CarouselProducts";
 import Newsletters from "./components/newsletters/Newsletters";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -45,6 +42,9 @@ export default function App() {
       <Box mx={{ xs: "1rem", md: "4rem" }}>
         <Newsletters />
       </Box>
+<<<<<<< HEAD
+      <Footer />
+=======
       {/* Footer */}
       <Box>
         <Box
@@ -204,6 +204,7 @@ export default function App() {
           </Typography>
         </Box>
       </Box>
+>>>>>>> origin/main
     </Box>
   );
 }
