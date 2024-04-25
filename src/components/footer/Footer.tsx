@@ -46,6 +46,7 @@ export default function Footer() {
           justifyContent="space-between"
           alignItems="center"
           width="100%"
+          pt="1rem"
         >
           {/* list */}
           <Box display="flex" justifyContent="space-between" width="30%">
@@ -101,11 +102,12 @@ export default function Footer() {
               style={{ color: "#003F62" }}
               display="flex"
               justifyContent="left"
+              mb="1rem"
             >
               <TwitterIcon />
-              <FacebookRoundedIcon sx={{ mr: "1rem" }} />
-              <WhatsAppIcon sx={{ mr: "1rem" }} />
-              <InstagramIcon sx={{ mr: "1rem" }} />
+              <FacebookRoundedIcon sx={{ mr: "1.5rem" }} />
+              <WhatsAppIcon sx={{ mr: "1.5rem" }} />
+              <InstagramIcon sx={{ mr: "1.5rem" }} />
             </Box>
             {/* Signs */}
             <Box display="flex">
@@ -127,7 +129,25 @@ export default function Footer() {
           </Box>
         </Box>
         {/* about us */}
-        <Box>about us</Box>
+        <Box py="1rem">
+          <Typography
+            sx={{
+              fontWeight: "bold",
+              color: "#003F62",
+              fontSize: "1.1rem",
+            }}
+            pb="1rem"
+          >
+            درباره ما
+          </Typography>
+          <Typography>
+            کتپوش برخلاف بسیاری از فروشگاه ها، به صورت تخصصی بر روی کفش و کتونی
+            تمرکز کرده است تا بتواند در این حوزه بهترین محصولات و خدمات ممکن را
+            ارائه دهد. مهم ترین هدف کتپوش ارائه کتونی و کفش با بالاترین کیفیت
+            ممکن در دنیاست تا علاوه بر رضایت مشتریان یک خرید لذت بخش را ارائه
+            دهد.
+          </Typography>
+        </Box>
       </Box>
       {/* copyright */}
       <Box
