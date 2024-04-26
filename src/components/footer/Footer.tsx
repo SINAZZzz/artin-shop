@@ -16,14 +16,19 @@ export default function Footer() {
         borderBottom="1px solid #003F62"
         bgcolor="#EBE6FE"
       >
-        <Typography mr={{ xs: "1rem", md: "4rem" }}>
+        <Typography
+          mr={{ xs: "1rem", md: "4rem" }}
+          fontSize={{ lg: "1rem", md: "0.8rem", xs: "0.8rem" }}
+        >
           پشتیبانی 24 ساعته در هر روز هفته
         </Typography>
-        <Typography>تلفن پشتیبانی کالا: 5293792-021</Typography>
+        <Typography fontSize={{ lg: "1rem", md: "0.8rem", xs: "0.8rem" }}>
+          تلفن پشتیبانی کالا: 5293792-021
+        </Typography>
         <Box
           display="flex"
           justifyContent="space-between"
-          width="20%"
+          width={{ lg: "30%", md: "30%", xs: "40%" }}
           ml={{ xs: "1rem", md: "4rem" }}
         >
           <Typography>راهنما</Typography>
