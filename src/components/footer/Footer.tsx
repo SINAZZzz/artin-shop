@@ -54,7 +54,11 @@ export default function Footer() {
           pt="1rem"
         >
           {/* list */}
-          <Box display="flex" justifyContent="space-between" width="30%">
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            width={{ lg: "30%", md: "40%", xs: "50%" }}
+          >
             <List>
               <ListItem
                 sx={{
