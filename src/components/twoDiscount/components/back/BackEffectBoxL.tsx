@@ -13,7 +13,7 @@ export default function BackEffectBoxL() {
       >
         <ShadowBox
           width="5rem"
-          height="80%"
+          height="60%"
           mr="1.5rem"
           borderRadius="30px 30px 0px 0px"
           style={{ background: "rgba(21,126,247,15%)" }}
@@ -25,7 +25,7 @@ export default function BackEffectBoxL() {
         position="absolute"
         justifyContent="end"
         zIndex={0}
-        height={{ xl: "43.8%", lg: "42%", md: "49.8%", xs: "49.8%" }}
+        height={{ xl: "43.8%", lg: "32.3%", md: "37.3%", xs: "49.8%" }}
         width="100%"
         left={0}
       >
