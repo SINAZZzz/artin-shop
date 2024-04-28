@@ -1,5 +1,8 @@
 import { Box, TextField, Typography } from "@mui/material";
 import Btn from "../Btn";
+import Form from "./components/Form";
+import Title from "../Title";
+import Description from "../Description";
 
 export default function Newsletters() {
   return (
@@ -18,43 +21,16 @@ export default function Newsletters() {
         width="100%"
       >
         <Box>
-          <Typography fontWeight="bold" mb="0.5rem">
-            ثبت نام در خبرنامه
-          </Typography>
-          <Typography color="#4A4A4A">
-            اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های ویژه
-            ما مطلع می شوید.
-          </Typography>
-        </Box>
-        <Box display="flex">
-          <TextField
-            placeholder="شماره موبایل"
-            variant="outlined"
-            dir="rtl"
-            InputProps={{
-              style: {
-                fontSize: "1.2rem",
-                maxWidth: "100%",
-                borderRadius: "10px",
-                height: "3rem",
-                marginLeft: "2rem",
-              },
-            }}
-            sx={{
-              width: { xs: "15rem", md: "25rem" },
-            }}
-          />
-          <Btn
-            Title="ارسال"
-            borderRadius="10px"
-            px="2.5rem"
-            border="none"
-            color="white"
-            background="7854F7"
-            py="1rem"
-            fontSize="1rem"
+          <Title title="ثبت نام در خبرنامه" fontSize="1rem" />
+          <Description
+            description="
+          اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های ویژه
+          ما مطلع می شوید."
+            color="#4A4A4A"
+            textAlign="right"
           />
         </Box>
+        <Form />
       </Box>
     </Box>
   );
