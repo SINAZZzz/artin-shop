@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: Vazir;
+  src: url(assets/fonts/Vazir.ttf);
+}
+
+body{
+  font-family: Vazir;
+}
+
 .swiper {
   width: 100%;
   height: 25rem;
