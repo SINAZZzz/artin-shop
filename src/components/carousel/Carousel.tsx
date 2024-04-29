@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Box, CircularProgress } from '@mui/material';
+import React, { useEffect, useState } from "react";
+import { Box, CircularProgress } from "@mui/material";
 
 interface CarouselProps {
   images: string[];
@@ -15,7 +15,9 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+      setIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
     }, 5000);
 
     return () => clearInterval(interval);
@@ -24,34 +26,38 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <Box>
       <Box
-        mt={{ xs: '2rem', sm: '3rem' }}
-        textAlign='center'
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
+        mt={{ xs: "2rem", sm: "3rem" }}
+        textAlign="center"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
       >
-        {loading && 
-        <Box p='13rem'>
-          <CircularProgress />
-        </Box>} 
-        <Box component='img' src={images[index]}
-        onLoad={() => setLoading(false)}
-        onError={() => setLoading(false)}
-        style={{ display: loading ? 'none' : 'block' ,  maxWidth: '100%' }} /> 
+        {loading && (
+          <Box p="13rem">
+            <CircularProgress />
+          </Box>
+        )}
+        <Box
+          component="img"
+          src={images[index]}
+          onLoad={() => setLoading(false)}
+          onError={() => setLoading(false)}
+          style={{ display: loading ? "none" : "block", maxWidth: "100%" }}
+        />
       </Box>
-      <Box display='flex'>
+      <Box display="flex">
         {images.map((_, i) => (
           <Box
             key={i}
             onClick={() => handleDotClick(i)}
             sx={{
-              cursor: 'pointer',
-              width: '6px',
-              height: '6px',
-              borderRadius: '50%',
-              margin: '0 2px',
-              backgroundColor: i === index ? '#7854F7' : '#CEC0FF',
-              transition: 'background-color 0.3s',
+              cursor: "pointer",
+              width: "6px",
+              height: "6px",
+              borderRadius: "50%",
+              margin: "0 2px",
+              backgroundColor: i === index ? "#7854F7" : "#CEC0FF",
+              transition: "background-color 0.3s",
             }}
           />
         ))}

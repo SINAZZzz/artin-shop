@@ -96,3 +96,11 @@ export type ShadowBoxProps = {
   borderRadius: string;
   style: { background: string };
 };
+export type DescriptionProps = {
+  description: string,
+  color: string,
+  fontSize? : string,
+  mx?: string,
+  my?: string
+  textAlign: TextAlign
+}
