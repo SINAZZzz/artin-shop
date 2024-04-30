@@ -28,7 +28,7 @@ export default function BackEffectBoxR() {
         zIndex={0}
         justifyContent="center"
         position="absolute"
-        height={{ xl: "43.8%", lg: "32.3%", md: "37.3%", xs: "49.8%" }}
+        height={{ xl: "43.8%", lg: "37.3%", md: "49.8%", xs: "49.8%" }}
         left={0}
       >
         <ShadowBox
