@@ -57,7 +57,7 @@ export default function Footer() {
           <Box
             display="flex"
             justifyContent="space-between"
-            width={{ lg: "30%", md: "40%", xs: "50%" }}
+            width={{ lg: "40%", md: "50%", xs: "60%" }}
           >
             <List>
               <ListItem
