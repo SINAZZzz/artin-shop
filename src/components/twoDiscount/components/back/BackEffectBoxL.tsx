@@ -9,7 +9,7 @@ export default function BackEffectBoxL() {
         alignItems="end"
         zIndex={0}
         position="absolute"
-        height="43%"
+        height="25rem"
       >
         <ShadowBox
           width="5rem"
@@ -25,7 +25,7 @@ export default function BackEffectBoxL() {
         position="absolute"
         justifyContent="end"
         zIndex={0}
-        height={{ xl: "43.8%", lg: "37.3%", md: "49.8%", xs: "49.8%" }}
+        height="20rem"
         width="100%"
         left={0}
       >
