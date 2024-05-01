@@ -20,3 +20,5 @@
 
 <h3> Ui/Ux </h3>
 <a href='https://www.figma.com/file/aFvHKBS4N0Rekk5uu7GFHy/ecommerce-shoping-store-product-shoe-%D9%81%D8%B1%D9%88%D8%B4%DA%AF%D8%A7%D9%87-%DA%A9%D9%81%D8%B4-(Community)?type=design&node-id=5-3689&mode=design&t=7geRKOby9Oc50jc4-0'>
+    <img src='https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white' />
+</a>
