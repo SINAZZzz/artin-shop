@@ -3,7 +3,7 @@ import Btn from "../../Btn";
 
 export default function Form() {
   return (
-    <Box display="flex">
+    <Box display="flex" mr="0.2rem">
       <TextField
         placeholder="شماره موبایل"
         variant="outlined"
@@ -28,7 +28,7 @@ export default function Form() {
         border="none"
         color="white"
         background="7854F7"
-        py="1rem"
+        py="0.5rem"
         fontSize="1rem"
       />
     </Box>

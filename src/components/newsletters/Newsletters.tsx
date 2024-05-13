@@ -20,7 +20,11 @@ export default function Newsletters() {
         width="100%"
       >
         <Box>
-          <Title title="ثبت نام در خبرنامه" fontSize="1rem" />
+          <Title
+            title="ثبت نام در خبرنامه"
+            fontSize="1.1rem"
+            fontWeight={"bold"}
+          />
           <Description
             description="
           اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های ویژه
