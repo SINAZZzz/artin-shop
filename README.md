@@ -17,6 +17,15 @@
 <a href='https://github.com/SINAZZzz'>
     <img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white' />
 </a>
+<a href='https://github.com/SINAZZzz](https://dribbble.com/SINAzz)'>
+    <img src='https://img.shields.io/badge/Dribbble-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white' />
+</a>
+ <a href='https://www.youtube.com/@sinarage'>
+    <img src='https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white' />
+</a>
+  <a href='https://www.instagram.com/sina_rage/'>
+    <img src='https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white' />
+</a>
 
 <h3> Ui/Ux </h3>
 <a href='https://www.figma.com/file/aFvHKBS4N0Rekk5uu7GFHy/ecommerce-shoping-store-product-shoe-%D9%81%D8%B1%D9%88%D8%B4%DA%AF%D8%A7%D9%87-%DA%A9%D9%81%D8%B4-(Community)?type=design&node-id=5-3689&mode=design&t=7geRKOby9Oc50jc4-0'>
